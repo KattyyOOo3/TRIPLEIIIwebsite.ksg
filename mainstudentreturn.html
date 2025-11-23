@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>digitalinventory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+<div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">RETURN FORM</h3>
+                        <form id="registrationForm">
+                            <!-- Personal Information -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="name" 
+                                    placeholder="Enter your full name" 
+                                    required 
+                                />
+                                <div class="form-text">Please enter your full name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="schoolid" class="form-label">School I.D Number</label>
+                                <input 
+                                    type="schoolid" 
+                                    class="form-control" 
+                                    id="schoolid" 
+                                    placeholder="Enter your email" 
+                                    required 
+                                />
+                                <div class="form-text">Please enter your school I.D number.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="item" class="form-label">Item</label>
+                                <input 
+                                    type="item" 
+                                    class="form-control" 
+                                    id="item" 
+                                    placeholder="Enter the item you are going to return" 
+                                    required 
+                                />
+                                <div class="form-text">Please enter the item you are going to return.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input 
+                                    type="quantit" 
+                                    class="form-control" 
+                                    id="quantity" 
+                                    placeholder="Enter the quantity of the item you are going to return"
+                                    required
+                                />
+                                <div class="form-text">Please enter the quantity of the item you are going to return.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                 <label for="userType" class="form-label">User Type</label>
+                                 <select 
+                                        class="form-control" 
+                                        id="userType" 
+                                         required
+                            >
+                                         <option value="">.....</option>
+                                         <option value="Admin">ADMIN</option>
+                                        <option value="student">STUDENT</option>
+                                 </select>
+                        </div>
+                            
+                            <center><h4>YEYYY!!!</h4></center>
+                            <center><p>(Good job, you returned the item!)</p></center>
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+                                <div id="formFeedback" class="mt-3"></div>
+                            </div>
+                        </form>
+                    </div>
